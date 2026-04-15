@@ -1,0 +1,99 @@
+body{
+  background-color: #9B83CD;
+  font-family: Arial, sans-serif;
+}
+
+.container_telas_inciais {
+    display: flex;
+    background-color: white;
+    max-width: 800px;
+    height: 400px;
+    margin: 40px auto;
+}
+
+.container_esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 55%;
+
+  background: linear-gradient(90deg, #5f43b2 0%, #7a4df4 100%);
+  color: white;
+}
+
+.container_texto {
+  text-align: center;
+  max-width: 60%;
+}
+
+.container_texto h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.container_texto p {
+  font-size: 20px;
+  opacity: 0.70;
+}
+
+.container_direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.container_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+
+    height: 34px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.container_input input {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.container_select {
+    height: 39px;
+    width: 72%;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+
+.botao_telas_iniciais {
+    background: linear-gradient(90deg, #5f43b2 0%, #7a4df4 100%);
+    color: white;
+    border: none;
+    height: 34px;
+    width: 70%;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 16px;
+
+    box-shadow: 0 6px 14px rgba(95, 67, 178, 0.28);
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        filter 0.12s ease;
+}
+
+.botao_telas_iniciais:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 8px rgba(95, 67, 178, 0.35);
+  filter: brightness(0.95);
+}
