@@ -1,0 +1,33 @@
+.container_home {
+  max-width: 1200px;
+  padding: 10px;
+  margin: 40px auto;
+  background-color: #e7ebf0;
+  border-radius: 12px;
+}
+
+.header_home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header_home_texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.header_home_texto h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.header_home_texto p {
+    margin-top: 0;
+}
+
+.header_home_btn_azul {
+    margin-top: 0;
+    width: 120px;
+}

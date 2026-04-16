@@ -1,5 +1,6 @@
 .container_lista_anuncios {
   max-width: 1024px;
+  margin: 0 auto;
   background: #fff;
   border-radius: 12px;
   padding: 10px;
@@ -32,4 +33,10 @@
 
 .table_anuncios tbody tr:nth-child(even) {
   background-color: #fff;
+}
+
+.imagem_anuncio {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }

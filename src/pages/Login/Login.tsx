@@ -37,12 +37,12 @@ function Login() {
         const dadosError = await resposta.json();
         throw new Error(dadosError.error);
       } else {
-        Swal.fire({
+         await Swal.fire({
           icon: "success",
           title: "Login realizado com sucesso !",
           text: "Agora, você poderá acessar a plataforma",
           confirmButtonText: "Tudo certo !",})
-        navegar('anuncios');
+        navegar('/anuncios');
       }
     } catch (error: any) {
       Swal.fire({
