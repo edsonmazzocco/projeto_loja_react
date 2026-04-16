@@ -30,7 +30,9 @@ function Home() {
                         <p className="card_informacoes_valor">R$ {anuncio.valor.toFixed(2)} </p>
                         <p className="card_informacoes_texto">em até 4x de R$ {(anuncio.valor / 4).toFixed(2)} sem juros</p>
                     </div>
-                    <button className="botao_telas_iniciais home_btn_verde"><FaWhatsapp />Negociar</button>
+                    <a className="botao_telas_iniciais home_btn_verde" href={`https://wa.me/5549999827979?text=Olá,%20tenho%20interesse%20no%20anúncio:%20${anuncio.nome}`} target="_blank">
+                        <FaWhatsapp/> Negociar
+                    </a>
                 </div>
             </div>
         ))}

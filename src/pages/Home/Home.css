@@ -102,4 +102,6 @@
     margin-bottom: 20px;
     width: 120px;
     background: linear-gradient(90deg, #0ca520 0%, #077115 100%);
+    text-decoration: none;
+    color: white;
 }
