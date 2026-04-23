@@ -40,3 +40,11 @@
   height: 40px;
   object-fit: cover;
 }
+
+.header_home_btn_azul {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 120px;
+    float: right;
+    transition: background-color 0.3s ease;
+}

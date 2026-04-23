@@ -50,6 +50,7 @@ function CriarConta() {
           name: nome,
           password: senha,
           email: email,
+          plan: plano
         }),
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +68,7 @@ function CriarConta() {
         text: "Agora, você poderá fazer o login e desfrutar da plataforma",
         confirmButtonText: "Tudo certo !",
       });
-      navegar('/');
+      navegar('/login');
     } catch(error: any) {
       Swal.fire({
         icon: "error",
@@ -103,10 +104,10 @@ function CriarConta() {
 
         <select className='container_select' required value={plano} onChange={(e) => setPlano(e.target.value)}>
           <option value="">Selecione um plano</option>
-          <option value="plano_grauito">Gratuito - 10 anúncios por mês</option>
-          <option value="plano_bronze">Bronze - 20 anúncios por mês</option>
-          <option value="plano_prata">Prata - 50 anúncios por mês</option>
-          <option value="plano_ouro">Ouro - anúncios ilimitados</option>
+          <option value="Grauito">Gratuito - 10 anúncios por mês</option>
+          <option value="Bronze">Bronze - 20 anúncios por mês</option>
+          <option value="Prata">Prata - 50 anúncios por mês</option>
+          <option value="Ouro">Ouro - anúncios ilimitados</option>
         </select>
 
         <button type='submit' className='botao_telas_iniciais'>Criar conta</button>

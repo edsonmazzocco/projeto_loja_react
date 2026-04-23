@@ -13,7 +13,7 @@ function Home() {
                 <h1>Anúncios em destaque</h1>
                 <p>Encontre colecionaveis, mangás e acessórios do universo anime</p>
             </div>
-            <Link to="/Anuncios">
+            <Link to="/Login">
                 <button className="botao_telas_iniciais header_home_btn_azul">Quero Anunciar</button>
             </Link>
         </div>
