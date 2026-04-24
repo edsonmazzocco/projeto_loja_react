@@ -75,6 +75,12 @@ body{
     padding-left: 8px;
 }
 
+.container_input_busca{
+  background-color: white;
+  margin: 10px auto;
+  justify-content: left;
+}
+
 .botao_telas_iniciais {
     background: linear-gradient(90deg, #5f43b2 0%, #7a4df4 100%);
     color: white;
@@ -97,3 +103,16 @@ body{
   box-shadow: 0 2px 8px rgba(95, 67, 178, 0.35);
   filter: brightness(0.95);
 }
+
+@media (max-width: 600px) {
+  .container_telas_inciais {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+    .container_esquerda, .container_direita {
+    width: 100%;
+  }
+
+} 

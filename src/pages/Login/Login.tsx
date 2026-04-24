@@ -58,24 +58,24 @@ function Login() {
     <div className='container_telas_inciais'>
       <div className='container_esquerda'>
         <div className='container_texto'>
-          <h2>Welcome back!</h2>
-          <p>You can sign in to acess with yout existing account.</p>
+          <h2>Bem-vindo de volta!</h2>
+          <p>Você pode fazer login para acessar sua conta.</p>
         </div>
       </div>
       <form onSubmit={entrar} className='container_direita'>
-        <h1>Sign In</h1>
+        <h1>Usuário</h1>
         <div className='container_input'>
           <CiUser color='#CCC' size={20}/>
-          <input type='text' placeholder='Username or email' required value={login} onChange={(e) => setLogin(e.target.value)} />
+          <input type='email' placeholder='E-mail' required value={login} onChange={(e) => setLogin(e.target.value)} />
         </div>
         <div className='container_input'>
           <RiLockPasswordLine color='#CCC' size={20}/>
-          <input type='password' placeholder='Password' required value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type='password' placeholder='Senha' required value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
 
-        <button className='botao_telas_iniciais'>Sign In</button>
+        <button className='botao_telas_iniciais'>Entrar</button>
 
-        <p>New here?{" "}<Link className='link_criar_conta' to='/criar-conta'>Create an Account</Link></p>
+        <p>Não tem uma conta?{" "}<Link className='link_criar_conta' to='/criar-conta'>Crie aqui</Link></p>
       </form>
     </div>
   )
